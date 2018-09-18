@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LaraCast</string>
+    <string name="base_url">www.laracasts.com</string>
+    <string name="url_prefix">https://</string>
+    <string name="searchTemplateUrl">https://laracasts.com/search?q=</string>
+
+
+
+    <string name="search_title">Search Title</string>
+</resources>
