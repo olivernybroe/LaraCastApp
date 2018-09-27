@@ -13,7 +13,19 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:visibility="invisible"
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/fullscreenView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <WebView
         android:id="@+id/webView"
@@ -22,6 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/my_toolbar"/>
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar">
+    </WebView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
